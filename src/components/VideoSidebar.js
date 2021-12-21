@@ -13,7 +13,7 @@ const VideoSidebar = ({likes, messages, shares}) => {
         ) : (
           <FavoriteBorder fontSize={'large'} onClick={() => setLiked(true)}/>
         )}
-        <p>{liked ? likes + 1 : likes}</p>
+        <p>{liked ? parseInt(likes) + 1 : likes}</p>
       </div>
       <div className="video-sidebar__button">
         <Message fontSize={'large'}/>
