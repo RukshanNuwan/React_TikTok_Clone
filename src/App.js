@@ -11,7 +11,8 @@ const App = () => {
   }, []);
 
   const fetchData = async () => {
-    const response = await Axios.get('/v2/posts');
+    const response = await Axios.get('/v1/posts');
+    console.log(response.data);
     setVideos(response.data);
   };
 
