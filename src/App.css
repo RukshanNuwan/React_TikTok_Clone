@@ -9,6 +9,10 @@ html {
   background-color: #000;
 }
 
+.app__steps p {
+  color: #fff;
+}
+
 .app__videos {
   position: relative;
   height: 90%;

@@ -17,6 +17,10 @@ const App = () => {
 
   return (
     <div className="app">
+      <div className="app__steps">
+        <p>Scroll up/down the video to move another one</p>
+        <p>Click to play/pause</p>
+      </div>
       <div className="app__videos">
         {videos.map((video, index) => (
           <Video

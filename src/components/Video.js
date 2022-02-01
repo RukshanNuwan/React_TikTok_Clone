@@ -20,8 +20,13 @@ const Video = ({video_url, channel, description, song, likes, messages, shares})
 
   return (
     <div className={'video'}>
-      {/*<video src={'#'} loop={true}/>*/}
-      <img src={video_url} className={'video__player'} ref={videoRef} onClick={videoPressHandler}/>
+      <video
+        src={video_url}
+        loop={true}
+        className={'video__player'}
+        ref={videoRef}
+        onClick={videoPressHandler}
+      />
       <VideoFooter channel={channel} description={description} song={song}/>
       <VideoSidebar likes={likes} messages={messages} shares={shares}/>
     </div>
